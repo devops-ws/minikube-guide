@@ -14,6 +14,7 @@ minikube start --force --kvm-gpu --image-mirror-country cn \
 
 ## 在 WSL2 中运行
 ```shell
-minikube start --container-runtime=containerd --driver=none --force --kvm-gpu \
+minikube start  --container-runtime=containerd --driver=none --force --kvm-gpu -v 9 \
+  --image-repository registry.cn-hangzhou.aliyuncs.com/google_containers \
   --image-mirror-country cn
 ```
